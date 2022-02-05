@@ -1,0 +1,37 @@
+{
+    "title":"LR WEB - shop - Магазин",
+    "info":"Страница покупки привилегий",
+    "author":"WizZzarD",
+    "page":"shop",
+    "version":"1.1",
+    "required":
+    {
+        "core":"0.2",
+        "php":"7"
+    },
+    "setting":{
+        "status":1,
+        "type":1,
+        "available_types":"1",
+        "interface":1,
+        "interface_adjacent":"afternavbar",
+        "translation":1,
+        "data":1,
+        "data_always":0,
+        "css":1,
+        "js":1,
+        "cache_enable":0,
+        "cache_time":86400
+    },"sidebar":{
+        "0":{
+        "href":"?page=shop",
+        "open_new_tab":"0",
+        "icon_group":"zmdi",
+        "icon_category":null,
+        "icon":"shopping-basket",
+        "name":"_SP",
+        "sidebar_directory":"_Sidebar_blocks"
+        }
+    }
+}
+        
