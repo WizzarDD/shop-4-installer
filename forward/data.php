@@ -20,9 +20,9 @@ $params = [
 
 $content = Query::post(Tools::LICENSE_HOST . '/api/version/download', $params, [], true);
 
-$file = fopen(MODULES . "module_page_shop/version.zip", 'w') or die("не удалось найти файл");
-fwrite($file, $content);
-fclose($file);
+$fd = fopen (MODULES . 'module_page_shop/version.zip', "wb");
+$out = fwrite ($fd, $content);
+
 $zip = new ZipArchive;
 $res = $zip->open(MODULES . 'module_page_shop/version.zip');
 if ($res === TRUE) {
