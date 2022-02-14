@@ -18,7 +18,7 @@ $params = [
     'license' => Key::getByName(Key::MAIN_KEY)
 ];
 
-$content = Query::post(Tools::LICENSE_HOST . '/api/version/download', $params, [], true);
+$content = Query::post(Tools::LICENSE_HOST . '/api/version/download/last', $params, [], true);
 
 $fd = fopen (MODULES . 'module_page_shop/version.zip', "wb");
 $out = fwrite ($fd, $content);
